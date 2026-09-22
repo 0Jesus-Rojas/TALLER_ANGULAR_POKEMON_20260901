@@ -7,6 +7,8 @@ import { RowletComponent } from './components/rowlet/rowlet.component';
 import { SylveonComponent } from './components/sylveon/sylveon.component';
 import { LitleoComponent } from './components/litleo/litleo.component';
 import { ChandelureComponent } from './components/chandelure/chandelure.component';
+import { PokemonDetallesComponent } from './components/pokemon-detalles/pokemon-detalles.component';
+import { PokemonListaComponent } from './components/pokemon-lista/pokemon-lista.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'registro', pathMatch: 'full' },
@@ -18,5 +20,7 @@ export const routes: Routes = [
     { path: 'Sylveon', component: SylveonComponent },
     { path: 'Litleo', component: LitleoComponent },
     { path: 'Chandelure', component: ChandelureComponent },
+    { path: 'Pokemon/:name', component: PokemonDetallesComponent },
+    { path: 'PokemonLista', component: PokemonListaComponent },
     { path: '**', redirectTo: 'registro'}
 ];

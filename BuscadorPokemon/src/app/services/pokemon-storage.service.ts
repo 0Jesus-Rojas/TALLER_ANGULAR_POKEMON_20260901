@@ -1,14 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject, signal, Service } from '@angular/core';
+
 export interface PokemonTarjeta{
   id: number;
   nombre: string;
   imagen: string;
   tipo: string;
   baseExperience: string;
-  esFavorito: boolean;
+  esFavorito?: boolean;
 }
-@Service()
+//@Service()
 
 @Injectable({
   providedIn: 'root'
